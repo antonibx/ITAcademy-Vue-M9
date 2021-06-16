@@ -1,9 +1,3 @@
-##SELECT amistats.id_amistat, usuaris.nom FROM amistats, usuaris WHERE amistats.usuari1_id = usuaris.id_usuari
-##SELECT amistats.id_amistat, usuaris.nom FROM amistats, usuaris WHERE amistats.usuari2_id = usuaris.id_usuari;
-
-SELECT amistats.id_amistat, usuaris.nom
-FROM amistats, usuaris, fotos
-WHERE (amistats.usuari1_id = usuaris.id_usuari);
-
-## AND (amistats.usuari2_id = usuaris.id_usuari)
-## usuaris.nom, fotos.url
+SELECT t.id_compra, c.nom, e.nom, u.preu, m.nom, p.nom, a.carrer
+FROM compres AS t, clients AS c, empleats AS e, ulleres AS u, marques As m, proveidors as p, adreces as a
+WHERE (t.client_id = c.id_client) AND (t.venedor_id = e.id_empleat) AND (t.ulleres_id = u.id_ulleres) AND (u.marca_id = m.id_marca) AND (m.proveidor_id = p.id_proveidor) AND (p.adreça_id = a.id_adreça);
