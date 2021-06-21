@@ -9,5 +9,5 @@ INSERT INTO fotos (id_foto, ubicacio, url, usuari_id) values ("1", "Barcelona", 
 INSERT INTO fotos (id_foto, ubicacio, url, usuari_id) values ("2", "Girona", "http://fotos.cat/1", "2");
 
 ######### DADES AMISTATS ################
-INSERT INTO amistats (id_amistat, usuari1_id, usuari2_id) values ("1", "2", "3");
-INSERT INTO amistats (id_amistat, usuari1_id, usuari2_id) values ("2", "1", "2");
+INSERT INTO amistats (id_amistat, usuari1_id, usuari2_id, inici) values ("1", "2", "3", "A la platja");
+INSERT INTO amistats (id_amistat, usuari1_id, usuari2_id, inici) values ("2", "1", "2", "A classe de Vue");

@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `Xarxa`.`amistats` (
   `id_amistat` INT NOT NULL UNIQUE,
   `usuari1_id` INT NULL DEFAULT NULL,
   `usuari2_id` INT NULL DEFAULT NULL,
+  `inici` VARCHAR(100) NULL DEFAULT NULL,
   PRIMARY KEY (`id_amistat`),
   INDEX `usuari1_fk` (`usuari1_id` ASC),
   CONSTRAINT `usuari1_id`
